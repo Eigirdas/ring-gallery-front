@@ -1,0 +1,12 @@
+.ring-list-user {
+  background-color: rgb(250, 235, 215);
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center; /* center cards horizontally */
+  max-width: 1800px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 16px; /* space between cards */
+}

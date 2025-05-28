@@ -1,0 +1,40 @@
+.ring-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 8px; /* less margin because we use gap in container */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ring-card:hover {
+  transform: translateY(-8px); /* lift card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ring-card img {
+  width: 100%; /* fill width */
+  height: 160px; /* fixed height */
+  object-fit: cover; /* crop and cover */
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.ring-card h3 {
+  font-size: 1.3em;
+  margin: 12px 12px 6px 12px;
+  color: #333;
+  flex-grow: 0;
+}
+
+.ring-card p {
+  font-size: 1em;
+  margin: 0 12px 12px 12px;
+  color: #666;
+  font-weight: 600;
+  flex-grow: 0;
+}
