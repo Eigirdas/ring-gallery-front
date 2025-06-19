@@ -1,0 +1,79 @@
+.register-container {
+  max-width: 400px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  background-color: rgb(250, 235, 215);
+}
+
+.profile-img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  outline-offset: 2px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #dbb053;
+}
+
+.error-message {
+  color: #d93025;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #188038;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #357ab8;
+}

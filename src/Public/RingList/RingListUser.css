@@ -1,0 +1,13 @@
+.ring-list-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;               /* space between cards */
+  justify-content: center; /* center cards horizontally */
+  padding: 20px;
+}
+
+p{
+  color: red;
+  padding-left: 900px;
+  
+}

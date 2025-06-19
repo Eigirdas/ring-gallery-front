@@ -1,0 +1,141 @@
+.ring-card {
+  background: linear-gradient(145deg, #fdfdfd, #eaeaea);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 320px;
+  flex: 1 1 320px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c2c2c;
+  box-shadow:
+    4px 4px 10px rgba(190, 190, 190, 0.6),
+    -4px -4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ring-card:hover {
+  transform: translateY(-8px);
+box-shadow:
+  4px 4px 10px rgba(190, 190, 190, 0.6),
+  -4px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.ring-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+  color: #222;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ring-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  min-height: 48px; /* keep card height consistent */
+}
+
+.ring-detail {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  color: #444;
+  font-weight: 600;
+}
+
+.ring-detail strong {
+  color: #6a4f4f;
+}
+
+.ring-gallery {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  user-select: none;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transition: filter 0.3s ease;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6a4f4f;
+  border: none;
+  color: white;
+  font-family: monospace;
+  font-size: 1.8rem;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(106, 79, 79, 0.6);
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.gallery-nav:hover {
+  background: #865959;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-nav.left {
+  left: 6px;
+}
+
+.gallery-nav.right {
+  right: 6px;
+}
+
+.no-images {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ring-card-error {
+  padding: 16px;
+  background: #ffe6e6;
+  border-radius: 8px;
+  color: #b00000;
+  text-align: center;
+  max-width: 320px;
+  margin: 20px auto;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .ring-card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
